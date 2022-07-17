@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-index',
@@ -12,6 +13,7 @@ export class IndexComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init()
   }
 
 }
